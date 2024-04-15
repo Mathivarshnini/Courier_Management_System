@@ -38,18 +38,18 @@ alter table Courier add EmployeeID int;
 alter table Courier add foreign key(EmployeeID) references Employee(EmployeeID);
 
 INSERT INTO Courier VALUES 
-(101, 'John Paul', 'Chennai, Tamil Nadu, India', 'Jane Doe', '456 Elm St, Coimbatore, India', 2.5, 'In Transit', 'TRK123456', '2024-04-13', 51),
-(102, 'Mathi', 'Madurai, Tamil Nadu, India', 'Bob Smith', '321 Pine St,Chennai, India', 1.8, 'Delivered', 'TRK789012', '2024-04-10', 53),
-(103, 'Ram', 'Tiruchirappalli, Tamil Nadu, India', 'Michael Brown', '456 Elm St, Madurai, India', 3.1, 'Pending', 'TRK345678', '2024-04-12', 51),
-(104, 'Hema', 'Salem, Tamil Nadu, India', 'David Johnson', '852 Walnut St,Madurai, India', 4.2, 'In Transit', 'TRK901234', '2024-04-15', 60),
-(105, 'Anu', 'Coimbatore, Tamil Nadu, India', 'Sophia Williams', '147 Sycamore St, Salem, India', 2.7, 'Pending', 'TRK567890', '2024-04-09', 56),
-(106, 'Mohan', 'Chennai, Tamil Nadu, India', 'Smith Johnson', '321 Pine St, Madurai, India', 1.8, 'Delivered', 'TRK789013', '2024-04-10', 57),
-(107, 'Ravi', 'Salem, Tamil Nadu, India', 'Prakash Kumar', '456 Elm St,  Chennai, India', 2.5, 'In Transit', 'TRK123457', '2024-04-13', 51),
-(108, 'Arun', 'Tiruchirappalli, Tamil Nadu, India', 'Raj Singh', '321 Pine St, Madurai, India', 1.8, 'Delivered', 'TRK789072', '2024-04-10', 52),
-(109, 'John', 'Madurai, Tamil Nadu, India', 'Raju Patel', '654 Birch St, Coimbatore, India', 3.1, 'Pending', 'TRK345679', '2024-04-12', 58),
-(110, 'Priya', 'Coimbatore, Tamil Nadu, India', 'Davidra Krishnan', '852 Walnut St,Chennai, India', 4.2, 'In Transit', 'TRK901204', '2024-04-15', 57),
-(111, 'Mathi', 'Madurai, Tamil Nadu, India', 'Davidan Balaji', '852 Walnut St, Coimbatore, India', 4.2, 'In Transit', 'TRK901934', '2024-04-15', 53),
-(112, 'John', 'Madurai, Tamil Nadu, India', 'Rajesh Kumar', '654 Birch St, Salem, India', 3.1, 'Pending', 'TRK345778', '2024-04-12', 55);
+(101, 'John Paul', 'Chennai, Tamil Nadu, India', 'Harini', '456 Elm St, Coimbatore, India', 2.5, 'In Transit', 'TRK123456', '2024-04-13', 51),
+(102, 'Mathi', 'Madurai, Tamil Nadu, India', 'Joel', '321 Pine St,Chennai, India', 1.8, 'Delivered', 'TRK789012', '2024-04-10', 53),
+(103, 'Ram', 'Tiruchirappalli, Tamil Nadu, India', 'Michael ', '456 Elm St, Madurai, India', 3.1, 'Pending', 'TRK345678', '2024-04-12', 51),
+(104, 'Hema', 'Salem, Tamil Nadu, India', 'David', '852 Walnut St,Madurai, India', 4.2, 'In Transit', 'TRK901234', '2024-04-15', 60),
+(105, 'Anu', 'Coimbatore, Tamil Nadu, India', 'Sophia', '147 Sycamore St, Salem, India', 2.7, 'Pending', 'TRK567890', '2024-04-09', 56),
+(106, 'Mohan', 'Chennai, Tamil Nadu, India', 'Rahul', '321 Pine St, Madurai, India', 1.8, 'Delivered', 'TRK789013', '2024-04-10', 57),
+(107, 'Ravi', 'Salem, Tamil Nadu, India', 'Meena', '456 Elm St,  Chennai, India', 2.5, 'In Transit', 'TRK123457', '2024-04-13', 51),
+(108, 'Arun', 'Tiruchirappalli, Tamil Nadu, India', 'Ram', '321 Pine St, Madurai, India', 1.8, 'Delivered', 'TRK789072', '2024-04-10', 52),
+(109, 'John', 'Madurai, Tamil Nadu, India', 'Raju ', '654 Birch St, Coimbatore, India', 3.1, 'Pending', 'TRK345679', '2024-04-12', 58),
+(110, 'Priya', 'Coimbatore, Tamil Nadu, India', 'Krishna', '852 Walnut St,Chennai, India', 4.2, 'In Transit', 'TRK901204', '2024-04-15', 57),
+(111, 'Mathi', 'Madurai, Tamil Nadu, India', 'Balaji', '852 Walnut St, Coimbatore, India', 4.2, 'In Transit', 'TRK901934', '2024-04-15', 53),
+(112, 'John', 'Madurai, Tamil Nadu, India', 'Kumar', '654 Birch St, Salem, India', 3.1, 'Pending', 'TRK345778', '2024-04-12', 55);
 
 
 CREATE TABLE CourierServices (
@@ -86,16 +86,16 @@ CREATE TABLE Employee (
 );
 
 INSERT INTO Employee (EmployeeID, Name, Email, ContactNumber, Role, Salary) VALUES
-(51, 'Aravind Kumar', 'aravind.kumar@example.com', '+919876543210', 'Manager', 60000.00),
-(52, 'Priya John', 'priya.raman@example.com', '+919876543211', 'Developer', 50000.00),
-(53, 'Karthik Mani', 'karthik.mani@example.com', '+919876543212', 'HR Specialist', 55000.00),
-(54, 'Deepika Ramesh', 'deepika.ramesh@example.com', '+919876543213', 'Sales Representative', 45000.00),
-(55, 'Senthil Kumar', 'senthil.kumar@example.com', '+919876543214', 'Customer Support', 48000.00),
-(56, 'Nithya Sundaram', 'nithya.sundaram@example.com', '+919876543215', 'Marketing Manager', 58000.00),
-(57, 'Rajeshwari Balaji', 'rajeshwari.balaji@example.com', '+919876543216', 'Financial Analyst', 52000.00),
-(58, 'Manoj Krishnan', 'manoj.krishnan@example.com', '+919876543217', 'IT Specialist', 53000.00),
-(59, 'John Chandrasekhar', 'ananya.chandrasekhar@example.com', '+919876543218', 'Operations Supervisor', 56000.00),
-(60, 'Prakash Rajendran', 'prakash.rajendran@example.com', '+919876543219', 'Quality Assurance', 47000.00);
+(51, 'Aryan', 'aryan@example.com', '+919876543210', 'Delivery Agent', 35000.00),
+(52, 'Sita', 'sita@example.com', '+919876543211', 'Sales Head', 50000.00),
+(53, 'Vivek', 'vivek@example.com', '+919876543212', 'Delivery Agent', 35000.00),
+(54, 'john', 'john@example.com', '+919876543213', 'HR', 60000.00),
+(55, 'Karan', 'karan@example.com', '+919876543214', 'Manager', 48000.00),
+(56, 'Pooja', 'Pooja@example.com', '+919876543215', 'Delivery Agent', 35000.00),
+(57, 'Rohan', 'Rohan@example.com', '+919876543216', 'Marketing Analyst', 52000.00),
+(58, 'Anjali', 'anjali@example.com', '+919876543217', 'IT Specialist', 53000.00),
+(59, 'Sameer', 'sameer@example.com', '+919876543218', 'Supervisor', 56000.00),
+(60, 'Jaya', 'jaya@example.com', '+919876543219', 'Delivery Agent', 35000.00);
 
 
 CREATE TABLE Location (
